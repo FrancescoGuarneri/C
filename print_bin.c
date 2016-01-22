@@ -11,9 +11,9 @@ main(){
     while(resp[0]=='s'){
         printf("Insert n: ");
         scanf("%d",&n);
-        print("Rappr. binaria: ");
+        printf("Rappr. binaria: ");
         stampa_bin(n);
-        printf("Vuoi continuare? ");
+        printf("\nVuoi continuare? ");
         scanf("%s",&resp[0]);
     }
 }
@@ -21,7 +21,7 @@ main(){
 void stampa_bin(a){
     int i,j;
     char A[DIM_INT];
-    if(v==0){
+    if(a==0){
         printf("%d",a);
     }
     else{
@@ -29,8 +29,9 @@ void stampa_bin(a){
             A[i] = a%2;
             a/=2;
         }
-        for(j=i-1,j>=0;j--){
+        for(j=i-1;j>=0;j--){
             printf("%d",A[j]);
         }
     }
 }
+
